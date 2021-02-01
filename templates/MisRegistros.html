@@ -1,0 +1,24 @@
+﻿{%extends 'base2.html'%}
+{%block titulo%}
+Mis Blogs
+{%endblock%}
+
+{%block MensajeCabecera%}
+MIS REGISTROS
+{%endblock%}
+
+{%block contenido%}
+{{form.hidden_tag()}}
+  
+  <div align="right"><br />
+      <a class="buttonLink" href="crearBlog.html">Crear</a>
+  </div>
+  <br /><br /><br /><br />
+  <div>
+    <ul>
+      {%for r in row%}
+      <li><input type="button" value="{{r['head_4_bg']}} - {{r['bg_was_born_on']}}" /></li>
+      {%endfor}
+    </ul>
+  </div>
+{%endblock%}

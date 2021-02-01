@@ -1,0 +1,63 @@
+﻿{%extends 'base1.html'%}
+{%block titulo%}
+Cambiar Contraseña
+{%endblock%}
+
+{%block contenido%}
+{{form.hidden_tag()}}
+<form action="" method="post">
+    <span class="titulosVista">Cambiar Contrase&ntildea</span>
+    <table width="100%">
+        <tr>
+            <td class="tdLeft"><br /></td>
+            <td class="tdRight"><br /></td>
+            <td class="tdRight"><br /></td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                <span class="titulosFormulario">{{form.claveActual.label}}</span>
+            </td>
+            <td align="left" rowspan="6">
+                <img id="logoCandado" src="../static/img/candado.png" />
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                {{form.claveActual()}}
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                <span class="titulosFormulario">{{form.claveNueva.label}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                {{form.claveNueva()}}
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                <span class="titulosFormulario">{{form.claveNuevaConfirmacion.label}}</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft" colspan="2">
+                {{form.claveNuevaConfirmacion()}}
+            </td>
+        </tr>
+        <tr>
+            <td class="tdLeft"><br /></td>
+            <td class="tdRight"><br /></td>
+            <td class="tdRight"><br /></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                {{form.cambiarContrasena()}}
+            </td>
+        </tr>
+    </table>
+    <br />
+</form>
+{%endblock%}
+ 

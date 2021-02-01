@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="StyleSheet" href="../static/css/site.css" />
+    <script src="{{url_for('static',filename='js/funciones.js')}}"></script>
+    <title>{%block titulo%}{%endblock%}</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mainTable">
+            <div class="leftPanel">
+                <img id="logoCrearBlog" src="../static/img/crearBlog.png" />
+                <br />
+                <a href="index.html">P&aacutegina Principal</a>
+                <br />
+                <a href="cambiarContrasena">Cambio de Contrase&ntildea</a>
+                <br />
+                <a href="cerrarSesion">Cerrar Sesion</a>
+                <br />
+            </div>
+
+            <div class="rightPanel">
+                {%block contenido%}
+                
+                {%endblock%}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

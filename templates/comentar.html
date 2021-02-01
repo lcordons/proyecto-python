@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comentar</title>
+    <link rel="StyleSheet" href="css/estilos.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <h3>
+        A.BLOGS_Comentar
+      </h3>
+    </header>
+    <div class="agrupar">
+      <section class="seccion">
+        <header></header>
+        <div>
+          <h2>Tu Comentario:</h2>
+        </div>
+        <div>
+          <input type="text" class="blog" />
+        </div>
+        <div class="Botones">
+          <input type="button" value="Añadir" id="boton1" />
+          <input type="button" value="Cancelar" id="boton1" />
+        </div>
+      </section>
+    </section>
+ 
+{%for r in row%}
+        <tr>
+            <td> {{r["id_4_comt"]}}</td>
+            <td>{{r["id_4_bg_where_comt"]}}</td>
+            <td> {{r["infor_4_comt"]}}</td>
+            <td> {{r["comt_was_born_on"]}}</td>
+            <td>{{r["now_comt_is"]}}</td>
+        </tr> 
+{%endfor%}
+
+</table>
+    </div>
+  </body>
+</html>

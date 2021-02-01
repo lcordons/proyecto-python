@@ -1,0 +1,188 @@
+body {
+  background-color: bisque;
+  color: black;
+  margin: 10 0 10 0px;
+}
+
+.container {
+  display: table;
+  /*width: 100%; Cambio que puedo hacer*/
+}
+
+.container2 {
+  display: table;
+  width: 100%;
+}
+
+.mainTable {
+  display: table-row;
+}
+
+.leftPanel {
+  background-color: white;
+  width: 30%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  display: table-cell;
+  margin: 10 0 10 0px;
+  text-align: center;
+  padding: 8px;
+}
+
+a {
+  color: #99a5ff;
+  text-decoration: underline;
+}
+
+.rightPanel {
+  background-color: white;
+  width: 70%;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+  margin: 10 10 10 0px;
+  display: table-cell;
+  padding: 4px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.buttonLink {
+  background-color: #66b2ff;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px;
+  padding: 8px;
+  color: black;
+  width: 100%;
+}
+
+.buttonSubmit {
+    background-color: #66b2ff;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+    padding: 8px;
+    color: black;
+}
+
+
+.tdLeft {
+  width: 60%;
+  text-align: left;
+}
+
+.tdRight {
+  width: 40%;
+  text-align: center;
+}
+
+#logoBuscar {
+  width: 60px;
+}
+
+#logoCrearBlog {
+  width: 160px;
+}
+
+#logoCandado {
+  width: 100px;
+}
+
+#imgActualizar {
+  width: 200px;
+}
+
+#imgMisRegistros {
+  width: 200px;
+}
+
+.titulosVista {
+  background-color: #66b2ff;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 5px;
+  padding: 8px;
+  color: black;
+  width: 100%;
+}
+
+.titulosFormulario {
+  font-weight: bold;
+}
+
+.checkboxForm {
+  font-weight: bold;
+}
+
+.mainPanel {
+  background-color: white;
+  width: 70%;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  margin: 10 10 10 0px;
+  display: table-cell;
+  padding: 16px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.cabecera {
+  border: 2px solid black;
+  padding: 10px;
+  height: 20%;
+  background-color: white;
+  width: 328%;
+}
+
+.cabeceraContenido {
+  border-color: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.cabeceraContenido h1 {
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  background-color: #66b2ff;
+  width: fit-content;
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+}
+
+#botonCrear {
+  float: right;
+  background-color: #66b2ff;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px;
+  padding: 8px;
+  color: black;
+  width: 10%;
+}
+
+li input {
+  color: black;
+  font-family: sans-serif;
+  font-size: 20px;
+  padding: 35px;
+  margin: 7px;
+  width: 70%;
+}
+
+li {
+  list-style-type: none;
+}
+
+#tituloActualizar {
+  width: 40%;
+}
+
+#contenidoActualizar {
+  width: 80%;
+}

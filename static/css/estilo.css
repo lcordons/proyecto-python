@@ -1,0 +1,110 @@
+body {
+  background-image:  url('../img/sativa.png');
+}
+
+.jumbotron {
+   background-color: deepskyblue;
+   color: white;
+}
+/*
+.panel{
+ background-color: deepskyblue;
+}
+
+.panel-heading {
+   background: deepskyblue;
+}
+
+div.panel-heading.text-center{
+ background-color: blue !important;
+}
+
+.panel-default>.panel-heading {
+   color: #333;
+   background-color: blue !important;
+   border-color: #ddd;
+}
+
+.panel-heading {
+   background: deepskyblue;
+}
+.white {color:#ffffff;}
+
+#panel-header {
+   background-color: blue;
+}
+
+*/
+.panel-default > .panel-heading-custom {
+ background:#029ac4; color: #fff; 
+}
+
+
+
+.panel-body {
+   color: #2b2b2b !important;
+}
+
+.open > a {
+   background-color: #2b2b2b !important;
+}
+
+.btn-primary {
+   background-color: deepskyblue !important;
+   border: none;
+}
+
+.btn-primary:hover {
+   background-color: #2b2b2b !important;
+}
+
+.blue-background {background-color:#029ac4;}
+
+.white {color:#fff;}
+
+#resultados {
+ background-color: white !important;
+}
+
+
+
+.pater {
+ font-size: 1px;
+ letter-spacing: 200px;
+ /*width: 90%;o lo necesario*/
+ margin: auto;
+ }
+
+
+ .pater #cuenta {
+ text-align: right;
+ display: inline-block;
+ word-spacing: normal;
+ font-size: 9px;/*u otra unidad para IE8 y -*/
+ letter-spacing: normal;
+ white-space: normal;
+ width: 25%;/*El valor necesario*/
+ }
+
+ .pater #recuperar {
+ display: inline-block;
+ word-spacing: normal;
+ font-size: 9px;/*u otra unidad para IE8 y -*/
+ letter-spacing: normal;
+ white-space: normal;
+ width: 25%;/*El valor necesario*/
+ }
+
+/*
+ .modal-header {
+ padding:9px 15px;
+ border-bottom:1px solid #eee;
+ background-color: #0480be;
+ -webkit-border-top-left-radius: 5px;
+ -webkit-border-top-right-radius: 5px;
+ -moz-border-radius-topleft: 5px;
+ -moz-border-radius-topright: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+*/

@@ -1,0 +1,60 @@
+{%extends 'base2.html'%}
+{%block titulo%}
+Actualizar
+{%endblock%}
+
+    
+{%block MensajeCabecera%}
+ACTUALIZAR O ELIMINAR BLOG
+{%endblock%}
+
+
+{%block contenido%}
+{{form.hidden_tag()}}
+  
+  <table width="100%">
+
+    <form action="" method="POST">
+      <tr>
+        <td class="tdLeft" colspan="2">
+          <span class="titulosFormulario" name='titulo' id="titulo">{{form.titulo.label}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdLeft" colspan="2">
+          {{form.titulo}}
+        </td>
+      </tr>
+      <tr>
+        <td class="tdLeft" colspan="2">
+          <span class="titulosFormulario" name="contenido" id="contenido">{{form.contenido.label}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td class="tdLeft" colspan="2">
+          {{form.contenido}}
+        </td>
+      </tr>
+      <tr>
+        <td class="tdLeft">
+            {{form.publico}}
+        </td>
+      </tr>
+      <tr>
+          <td class="tdLeft"><br/></td>
+          <td class="tdRight"><br/></td>
+        </tr>            
+      <tr>
+        <td align="right" colspan="2">
+          {{form.actualizar.label}}
+          {{form.actualizar}}
+          <br>
+          {{form.eliminar.label}}
+          {{form.eliminar}} 
+        </td>
+      </tr>
+    </form>
+  </table>
+
+{%endblock%}
+       

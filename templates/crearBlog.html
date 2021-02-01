@@ -1,0 +1,51 @@
+{%extends 'base1.html'%}
+{%block titulo%}
+Crear Blog
+{%endblock%}
+
+{%block contenido%}
+    {{form.hidden_tag()}}
+    <form action="" method="post">
+        <br />
+        <span class="titulosVista">A .BLOGS</span>
+        <table width="100%">
+            <tr>
+                <td class="tdLeft" colspan="2">
+                    <span class="titulosFormulario">{{form.titulo.label}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdLeft" colspan="2">
+                    {{form.titulo()}}
+                </td>
+            </tr>
+            <tr>
+                <td class="tdLeft" colspan="2">
+                    <span class="titulosFormulario">{{form.contenido.label}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="tdLeft" colspan="2">
+                    {{form.contenido(cols="50", rows="10")}}
+                </td>
+            </tr>
+            <tr>
+                <td class="tdLeft">
+                    <span class="titulosFormulario">{{form.publico()}}</span>
+                </td>
+                <td class="tdRight">
+                </td>
+            </tr>
+            <tr>
+                <td class="tdLeft"><br /></td>
+                <td class="tdRight"><br /></td>
+            </tr>
+            <tr>
+                <td align="right" colspan="2">
+                    {{form.publicar()}}
+                </td>
+            </tr>
+        </table>
+        <br />
+    </form>
+{%endblock%}

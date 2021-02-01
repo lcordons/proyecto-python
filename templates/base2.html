@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block titulo%}{%endblock%}</title>
+    <link rel="StyleSheet" href="../static/css/site.css" />
+</head>
+<body>
+  <div class="container2"> <!--Esta clase contiene toda la página-->
+      <div class="cabecera">
+          <header> <!--Mensaje que se verá en la cabecera-->
+              <h1>{%block MensajeCabecera%}{%endblock%}</h1>
+          </header>
+      </div>
+
+      <div class="mainTable"> <!--Para separar la pantalla en dos-->        
+          
+          <div class="leftPanel"> <!--Lo que va en el lado izquierdo-->
+              <img src="../static/img/actaulizar.jpg" id="imgActualizar">
+              <div>
+                <a href="index.html">Página Principal</a>
+              </div>
+              <br>
+              <div>
+                  <a href="cambiarContrasena.html">Cambio de Contraseña</a>
+              </div>
+              <br>
+              <div>
+                  <a href="#">Cerrar Sesión</a>
+              </div> 
+          </div>
+
+          
+          <div class="rightPanel"> <!--Lo que va en el lado derecho-->
+            {%block contenido%}
+            
+            {%endblock%}
+          </div>
+          
+      </div>
+
+  </div>
+  
+</body>
+</html>
